@@ -1,0 +1,8 @@
+@mixin flex($items: start, $content: flex-start, $wrap: false){
+    display: flex;
+    align-items: $items;
+    justify-content: $content;
+    @if($wrap){
+        flex-wrap: wrap;
+    }
+}
